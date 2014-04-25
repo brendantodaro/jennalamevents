@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<title>Jenna Lam Events</title>
+
+<style type="text/css">
+*{
+	font-family:'myriad pro', sans-serif;
+}
+#all{
+	position: relative;
+	font-size:12px;
+	text-align:center;
+	margin:auto;
+	width: 400px;
+	top:200px;
+}
+#logo{
+	height:100px;
+}
+a {
+	color: black;
+	text-decoration:none;
+}
+
+</style>
+</head>
+<body>
+
+	<div id="all">
+		<div id="logo" style="display:none;">			<img id="top_logo" src="imgs/roundmark_jennalamevents.jpg" alt="JL Events"/>		</div>		
+			<div id="intro_text">
+				coming soon </br>		
+				<a id="email_link" href="mailto:jenna@jennalamevents.com">jenna@jennalamevents.com</a>		
+			</div>
+	</div>
+
+</body>
+<script src="http://code.jquery.com/jquery-1.7.1.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	$("#logo").fadeIn(1000, "swing",function(){
+		 $("#intro_text").delay(200).fadeIn(1000);
+	 });
+});
+
+$("#email_link").hover(function(){
+		$("#email_link").animate({opacity:0.5}, 400);
+	}, function(){
+		$("#email_link").animate({opacity:1}, 400);
+	});
+
+
+
+</script>
+</html>
